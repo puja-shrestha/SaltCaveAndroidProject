@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_featured"
+        android:icon="@drawable/ic_action_stars_feature"
+        android:title="Featured"
+        />
+
+    <item
+        android:id="@+id/menu_services"
+        android:icon="@drawable/ic_action_facial_treatment"
+        android:title="Services" />
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_action_home_icon"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/menu_products"
+        android:icon="@drawable/ic_action_beauty_products"
+        android:title="Products" />
+
+    <item
+        android:id="@+id/menu_more"
+        android:icon="@drawable/ic_action_more_options"
+        android:title="More" />
+
+
+</menu>

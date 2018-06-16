@@ -1,0 +1,216 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/sliderView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                />
+
+        </FrameLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@drawable/bg_indicator"/>-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/pagesContainer"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:orientation="horizontal"/>-->
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last."/>
+        </LinearLayout>
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/colorOrange"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginBottom="6dp"
+            android:background="#f9ce9a"
+            android:layout_gravity="center"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/sans"
+                android:textColor="@color/colorBlack"
+                android:text="Our Products"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sans"
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:text="See all"
+                android:gravity="right|center"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_action_right_arrows"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/featuredRecycler"
+            android:layout_width="match_parent"
+            android:overScrollMode="never"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:paddingTop="17dp"-->
+                <!--android:layout_weight="3"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:fontFamily="@font/sans"-->
+                <!--android:textColor="@color/colorBlack"-->
+                <!--android:text="Our Services"-->
+                <!--android:textSize="16dp"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:paddingTop="17dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:fontFamily="@font/sans"-->
+                <!--android:textColor="@color/colorBlack"-->
+                <!--android:text="See all"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:textSize="14dp"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imageView2"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:tint="@color/colorOrange"-->
+                <!--android:src="@drawable/right_arrow_circular_button" />-->
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="#f9ce9a"
+            android:layout_gravity="center"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/sans"
+                android:textColor="@color/colorBlack"
+                android:text="Our Services"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sans"
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:text="See all"
+                android:gravity="right|center"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_action_right_arrows"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/serviceRecycler"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+       </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorOrange"
+            android:text="Book appointment"
+            android:id="@+id/abook_button"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+</ScrollView>
