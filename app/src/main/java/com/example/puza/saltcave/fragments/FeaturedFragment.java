@@ -67,8 +67,8 @@ public class FeaturedFragment extends Fragment {
 
     private void prepareAlbums(){
         int[] covers = new int[]{
-                R.drawable.image1,
-                R.drawable.image2,
+                R.drawable.image9,
+                R.drawable.image10,
                 R.drawable.image3,
                 R.drawable.image4,
                 R.drawable.image5,
@@ -80,9 +80,9 @@ public class FeaturedFragment extends Fragment {
         };
         FeaturedItems a =new FeaturedItems(covers[0], "Herbal soup", "$6.77");
         featuredList.add(a);
-        a =new FeaturedItems(covers[0], "Herbal soup", "$6.77");
-        featuredList.add(a);
         a =new FeaturedItems(covers[1], "Herbal soup", "$6.77");
+        featuredList.add(a);
+        a =new FeaturedItems(covers[2], "Herbal soup", "$6.77");
         featuredList.add(a);
         a =new FeaturedItems(covers[3], "Herbal soup", "$6.77");
         featuredList.add(a);

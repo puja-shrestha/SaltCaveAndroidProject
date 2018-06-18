@@ -48,14 +48,15 @@ public class GalleryFragment extends Fragment {
 
         initCollapsingToolbar();
 
-        recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
+
+        recyclerView = (RecyclerView) view.findViewById(R.id.gallery_recycler_view);
 
         albumList = new ArrayList<>();
         adapter = new GalleryAdapter(getContext(), albumList);
 
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getContext(), 2);
         recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(10), true));
+        recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(5), true));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
 
@@ -67,7 +68,6 @@ public class GalleryFragment extends Fragment {
             e.printStackTrace();
         }
 
-
         return  view;
 
     }
@@ -76,7 +76,7 @@ public class GalleryFragment extends Fragment {
         final CollapsingToolbarLayout collapsingToolbar =
                 (CollapsingToolbarLayout) view.findViewById(R.id.collapsing_toolbar);
         collapsingToolbar.setTitle(" ");
-        AppBarLayout appBarLayout = (AppBarLayout) view.findViewById(R.id.appbar);
+        AppBarLayout appBarLayout = (AppBarLayout) view.findViewById(R.id.galleryAppbar);
         appBarLayout.setExpanded(true);
 
         // hiding & showing the title when toolbar expanded & collapsed
@@ -117,34 +117,34 @@ public class GalleryFragment extends Fragment {
                 R.drawable.image10,
                 R.drawable.image8};
 
-        GalleryItem a = new GalleryItem("Maroon5", 13, covers[0]);
+        GalleryItem a = new GalleryItem(covers[0]);
         albumList.add(a);
 
-        a = new GalleryItem("Sugar Ray", 8, covers[1]);
+        a = new GalleryItem(covers[1]);
         albumList.add(a);
 
-        a = new GalleryItem("Bon Jovi", 11, covers[2]);
+        a = new GalleryItem(covers[2]);
         albumList.add(a);
 
-        a = new GalleryItem("The Corrs", 12, covers[3]);
+        a = new GalleryItem(covers[3]);
         albumList.add(a);
 
-        a = new GalleryItem("The Cranberries", 14, covers[4]);
+        a = new GalleryItem(covers[4]);
         albumList.add(a);
 
-        a = new GalleryItem("Westlife", 1, covers[5]);
+        a = new GalleryItem(covers[5]);
         albumList.add(a);
 
-        a = new GalleryItem("Black Eyed Peas", 11, covers[6]);
+        a = new GalleryItem(covers[6]);
         albumList.add(a);
 
-        a = new GalleryItem("VivaLaVida", 14, covers[7]);
+        a = new GalleryItem(covers[7]);
         albumList.add(a);
 
-        a = new GalleryItem("The Cardigans", 11, covers[8]);
+        a = new GalleryItem(covers[8]);
         albumList.add(a);
 
-        a = new GalleryItem("Pussycat Dolls", 17, covers[9]);
+        a = new GalleryItem(covers[9]);
         albumList.add(a);
 
         adapter.notifyDataSetChanged();

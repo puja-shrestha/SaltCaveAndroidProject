@@ -90,10 +90,10 @@ public class HomeFragment extends Fragment {
 //        setupSlider();
 
         HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
-        file_maps.put("Herbal Soup",R.drawable.image3);
-        file_maps.put("Health Care",R.drawable.image2);
-        file_maps.put("Massage and Spa",R.drawable.image7);
-        file_maps.put("Hair Products", R.drawable.image5);
+        file_maps.put("Herbal Soup",R.drawable.banner1);
+        file_maps.put("Health Care",R.drawable.banner2);
+        file_maps.put("Massage and Spa",R.drawable.banner3);
+        file_maps.put("Hair Products", R.drawable.banner1);
 
         for(String name : file_maps.keySet()){
             TextSliderView textSliderView = new TextSliderView(getContext());

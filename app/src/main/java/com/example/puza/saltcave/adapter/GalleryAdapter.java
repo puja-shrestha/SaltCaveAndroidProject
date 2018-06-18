@@ -23,13 +23,10 @@ public class GalleryAdapter  extends RecyclerView.Adapter<GalleryAdapter.MyViewH
     private List<GalleryItem> albumList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView title, count;
         public ImageView thumbnail, overflow;
 
         public MyViewHolder(View view) {
             super(view);
-            title = (TextView) view.findViewById(R.id.title);
-            count = (TextView) view.findViewById(R.id.count);
             thumbnail = (ImageView) view.findViewById(R.id.thumbnail);
 //            overflow = (ImageView) view.findViewById(R.id.overflow);
         }
@@ -52,8 +49,6 @@ public class GalleryAdapter  extends RecyclerView.Adapter<GalleryAdapter.MyViewH
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         GalleryItem album = albumList.get(position);
-        holder.title.setText(album.getName());
-        holder.count.setText(album.getNumOfSongs() + " songs");
 
         // loading album cover using Glide library
         Glide.with(mContext).load(album.getThumbnail()).into(holder.thumbnail);

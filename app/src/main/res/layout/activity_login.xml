@@ -5,17 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:background="@color/colorOrange">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="60dp">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            app:srcCompat="@drawable/logosaltcave"
-            android:tint="@color/colorOrange"/>
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/logo" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -40,8 +48,7 @@
             android:text="EMAIL ID"
             android:textSize="@dimen/small_sixteen_text_size"
             android:paddingLeft="16dp"
-            android:fontFamily="@font/sans"
-            android:layout_marginBottom="7dp"/>
+            android:fontFamily="@font/sans"/>
 
         <EditText
             android:id="@+id/editText"
@@ -49,7 +56,6 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:padding="16dp"
-            android:background="@drawable/button_background_grey"
             android:inputType="textPersonName"
             android:hint="puja@gmail.com"
             android:paddingLeft="16dp"
@@ -62,7 +68,6 @@
             android:layout_height="wrap_content"
             android:text="PASSWORD"
             android:textSize="@dimen/small_sixteen_text_size"
-            android:layout_marginBottom="7dp"
             android:paddingLeft="16dp"
             android:fontFamily="@font/sans"/>
 
@@ -71,7 +76,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:background="@drawable/button_background_grey"
             android:inputType="textPersonName"
             android:hint="password"
             android:paddingLeft="16dp"
@@ -85,7 +89,7 @@
         android:layout_height="wrap_content"
         android:text="Login"
         android:layout_gravity="center"
-        android:background="@drawable/button_background"
+        android:background="@color/colorPrimary"
         android:textSize="18dp"
         android:layout_margin="30dp"
         android:textColor="@color/colorWhite"/>
@@ -107,11 +111,12 @@
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_weight="1"
-            android:background="@color/colorGrey"/>
+            android:background="@color/black"/>
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="OR WITH"
+            android:textColor="@color/black"
             android:gravity="center"
             android:layout_weight="2"
             android:textSize="16dp"/>
@@ -119,7 +124,7 @@
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_weight="1"
-            android:background="@color/colorGrey"/>
+            android:background="@color/black"/>
         <View
             android:layout_width="0dp"
             android:layout_height="1dp"
@@ -131,7 +136,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginBottom="25dp"
         android:padding="25dp">
 
         <TextView
@@ -143,8 +147,9 @@
             android:text="Facebook"
             android:padding="10dp"
             android:gravity="center"
+            android:textColor="@color/colorWhite"
             android:drawableLeft="@drawable/facebook"
-            android:background="@drawable/button_background_grey"
+            android:background="#0044ff"
            />
 
         <TextView
@@ -156,34 +161,52 @@
             android:drawableLeft="@drawable/google_plus"
             android:gravity="center"
             android:text="Google"
+            android:textColor="@color/colorWhite"
             android:layout_marginLeft="5dp"
-            android:background="@drawable/button_background_grey"
+            android:background="@color/colorPrimary"
             />
+        </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_marginBottom="25dp">
-
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/linear_layout_two"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Don't have an account?"
+            android:orientation="horizontal"
             android:gravity="center_horizontal"
-            android:textSize="16sp"/>
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/linear_layout_one">
 
-        <TextView
-            android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:textColor="@color/colorWhite"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"/>
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=" Register"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:textColor="@color/colorOrange"-->
+                <!--android:textSize="16sp"/>-->
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" Register"
-           android:gravity="center_horizontal"
-            android:textColor="@color/colorOrange"
-            android:textSize="16sp"/>
-
-    </LinearLayout>
-
-    </LinearLayout>
+            android:text="Register"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:textSize="18dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_below="@id/linear_layout_two"
+            android:textColor="@color/colorWhite"/>
+    </RelativeLayout>
 </ScrollView>
