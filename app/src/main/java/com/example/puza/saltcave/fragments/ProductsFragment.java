@@ -51,7 +51,7 @@ public class ProductsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.items_product_grid, container, false);
+        View view = inflater.inflate(R.layout.fragment_products, container, false);
 
         recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
 
@@ -172,26 +172,25 @@ public class ProductsFragment extends Fragment {
                 R.drawable.image9,
                 R.drawable.image10
         };
-        ProductItems a =new ProductItems("Beauty Products", 13, covers[0]);
+        ProductItems a =new ProductItems("Beauty Products", "$6.77", covers[0]);
         productList.add(a);
-
-        a =new ProductItems("Herbal Soup", 8, covers[1]);
+        a =new ProductItems("Herbal Soap", "$8.95", covers[1]);
         productList.add(a);
-        a =new ProductItems("Hair Oil", 13, covers[2]);
+        a =new ProductItems("Hair Oil", "$4.5", covers[2]);
         productList.add(a);
-        a =new ProductItems("Patanjali Facewash", 12, covers[3]);
+        a =new ProductItems("Patanjali Facewash", "$8.6", covers[3]);
         productList.add(a);
-        a =new ProductItems("Herbal Oil", 14, covers[4]);
+        a =new ProductItems("Herbal Oil", "$10.4", covers[4]);
         productList.add(a);
-        a =new ProductItems("Herbal Cream", 1, covers[5]);
+        a =new ProductItems("Herbal Cream", "$110", covers[5]);
         productList.add(a);
-        a =new ProductItems("Spa and Massage", 11, covers[6]);
+        a =new ProductItems("Spa and Massage", "$42.6", covers[6]);
         productList.add(a);
-        a =new ProductItems("Syampo", 14, covers[7]);
+        a =new ProductItems("Syampo", "$5.7", covers[7]);
         productList.add(a);
-        a =new ProductItems("Yoga", 11, covers[8]);
+        a =new ProductItems("Yoga", "$44.4", covers[8]);
         productList.add(a);
-        a =new ProductItems("Green Tea", 17, covers[9]);
+        a =new ProductItems("Green Tea", "$21.4", covers[9]);
         productList.add(a);
 
         productAdapter.notifyDataSetChanged();

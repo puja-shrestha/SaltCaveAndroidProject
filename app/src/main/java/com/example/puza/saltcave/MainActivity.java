@@ -29,6 +29,7 @@ import android.widget.Toast;
 
 import com.example.puza.saltcave.fragments.AppointmentFragment;
 import com.example.puza.saltcave.fragments.FeaturedFragment;
+import com.example.puza.saltcave.fragments.GalleryFragment;
 import com.example.puza.saltcave.fragments.HomeFragment;
 import com.example.puza.saltcave.fragments.MoreFragment;
 import com.example.puza.saltcave.fragments.ProductsFragment;
@@ -214,8 +215,8 @@ MainActivity extends AppCompatActivity implements NavigationView.OnNavigationIte
             fragment = new ServicesFragment();
             fragmentManager.beginTransaction().replace(R.id.frame_container, fragment).commit();
 
-        }else if (id == R.id.appointment){
-            fragment = new AppointmentFragment();
+        }else if (id == R.id.gallery){
+            fragment = new GalleryFragment();
             fragmentManager.beginTransaction().replace(R.id.frame_container, fragment).commit();
 
         }else if (id == R.id.settings){

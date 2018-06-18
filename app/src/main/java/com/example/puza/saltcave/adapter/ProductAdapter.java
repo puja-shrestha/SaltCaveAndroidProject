@@ -25,15 +25,15 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
-        public TextView title, count;
+        public TextView title, price;
         public ImageView thumbnail, overflow;
 
         public MyViewHolder(View itemView) {
             super(itemView);
             title =(TextView) itemView.findViewById(R.id.title);
-            count = (TextView) itemView.findViewById(R.id.count);
+            price = (TextView) itemView.findViewById(R.id.price);
             thumbnail = (ImageView) itemView.findViewById(R.id.thumbnail);
-            overflow = (ImageView) itemView.findViewById(R.id.overflow);
+//            overflow = (ImageView) itemView.findViewById(R.id.overflow);
         }
     }
 
@@ -45,7 +45,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemview = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.product_card, parent, false);
+                .inflate(R.layout.items_product, parent, false);
         return new MyViewHolder(itemview);
     }
 
@@ -53,17 +53,18 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
     public void onBindViewHolder(final ProductAdapter.MyViewHolder holder, int position) {
         ProductItems album = albumList.get(position);
         holder.title.setText(album.getName());
-        holder.count.setText(album.getNumOfSongs() + "Piece");
+//        holder.price.setText(album.getPrice() + "$6.99");
+        holder.price.setText(album.getPrice());
 
         //locating album cover using glide library
         Glide.with(mContext).load(album.getThumbnail()).into(holder.thumbnail);
 
-        holder.overflow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                showPopupMenu(holder.overflow);
-            }
-        });
+//        holder.overflow.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////                showPopupMenu(holder.overflow);
+//            }
+//        });
     }
 
 //    private void showPopupMenu(View view){

@@ -1,17 +1,19 @@
 package com.example.puza.saltcave.model;
 
-public class ProductItems {
+/**
+ * Created by Lincoln on 18/05/16.
+ */
+public class GalleryItem {
     private String name;
-    private String  price;
-    private  int thumbnail;
+    private int numOfSongs;
+    private int thumbnail;
 
-    public ProductItems(){
-
+    public GalleryItem() {
     }
 
-    public ProductItems(String name, String price, int thumbnail) {
+    public GalleryItem(String name, int numOfSongs, int thumbnail) {
         this.name = name;
-        this.price = price;
+        this.numOfSongs = numOfSongs;
         this.thumbnail = thumbnail;
     }
 
@@ -23,12 +25,12 @@ public class ProductItems {
         this.name = name;
     }
 
-    public String getPrice() {
-        return price;
+    public int getNumOfSongs() {
+        return numOfSongs;
     }
 
-    public void setPrice(String price) {
-        this.price = price;
+    public void setNumOfSongs(int numOfSongs) {
+        this.numOfSongs = numOfSongs;
     }
 
     public int getThumbnail() {
@@ -39,4 +41,3 @@ public class ProductItems {
         this.thumbnail = thumbnail;
     }
 }
-

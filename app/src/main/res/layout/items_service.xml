@@ -14,56 +14,57 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingBottom="5dp"
-        android:padding="5dp"
-            >
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:id="@+id/image"
-            android:scaleType="fitXY"
-            android:padding="10dp"
-            android:src="@drawable/image6"/>
-
-        <!--<TextView-->
-            <!--android:layout_width="60dp"-->
-            <!--android:layout_height="60dp"-->
-            <!--android:background="@color/colorOrange"-->
-            <!--android:text="200$"-->
-            <!--android:layout_centerInParent="true"-->
-            <!--android:layout_marginTop="60dp"-->
-            <!--android:textColor="@color/colorWhite"-->
-            <!--android:gravity="center"/>-->
-
-        <TextView
-            android:id="@+id/name"
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/image"
-            android:textSize="@dimen/small_sixteen_text_size"
-            android:fontFamily="@font/sans"
-            android:text="Hair Products"
-            android:layout_centerHorizontal="true"
-            android:textColor="@color/colorBlack"
-            android:textStyle="bold" />
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:padding="5dp">
 
-        <TextView
-            android:id="@+id/price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/name"
-            android:textSize="@dimen/very_small_text_size"
-            android:fontFamily="@font/sans"
-            android:text="$200"
-            android:layout_centerHorizontal="true"
-            android:textColor="@color/colorOrange"
-            />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:id="@+id/image"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                android:src="@drawable/image6"/>
 
-    </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorOrange"
+                android:text="200$"
+                android:padding="10dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:textSize="@dimen/small_sixteen_text_size"
+                android:fontFamily="@font/sans"
+                android:text="Hair Products"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:textSize="@dimen/very_small_text_size"
+                android:fontFamily="@font/sans"
+                android:text="$200"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorOrange"
+                />
+
+        </RelativeLayout>
     </FrameLayout>
 </android.support.v7.widget.CardView>
