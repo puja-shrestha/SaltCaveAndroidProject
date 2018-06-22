@@ -19,4 +19,9 @@
 
     <color name="viewBg">#f1f5f8</color>
     <color name="album_title">#4c4c4c</color>
+
+    <!--snnipet appointment onclick colour-->
+    <!--<drawable name="selected_color">#FF4081</drawable>-->
+
+    <drawable name="pressed_color">#E26201</drawable>
 </resources>

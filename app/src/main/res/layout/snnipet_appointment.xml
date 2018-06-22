@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/colorGrey"
+    android:clickable="true">
+
+    <LinearLayout
+        android:id="@+id/linear_one"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:background="@drawable/my_selecter">
+
+        <ImageView
+            android:id="@+id/imgServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_service"
+            />
+        <TextView
+            android:id="@+id/txtServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Services"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"/>
+
+    <LinearLayout
+        android:id="@+id/linear_two"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:background="@drawable/my_selecter">
+        <ImageView
+            android:id="@+id/imgDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_calender"
+            />
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"/>
+
+    <LinearLayout
+        android:id="@+id/linear_three"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:background="@drawable/my_selecter">
+        <ImageView
+            android:id="@+id/imgInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_info"
+            />
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Info"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"/>
+
+    <LinearLayout
+        android:id="@+id/linear_four"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:background="@drawable/my_selecter">
+        <ImageView
+            android:id="@+id/imgConfirmation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_confirmation"
+            />
+        <TextView
+            android:id="@+id/txtConfirmation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmation"/>
+    </LinearLayout>
+
+</LinearLayout>

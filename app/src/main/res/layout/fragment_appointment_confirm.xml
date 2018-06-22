@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.appointment.AppointmentConfirmFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/txtStep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Step 4"
+            android:textSize="@dimen/small_sixteen_text_size"
+            android:fontFamily="@font/sans"/>
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmation"
+            android:textSize="@dimen/medium_text_size"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sans"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/appointmentRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/snnipet">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:textSize="@dimen/medium_text_size"
+            android:fontFamily="@font/sans"
+            android:textColor="@color/black"
+            android:paddingTop="16dp"/>
+
+        <TextView
+            android:id="@+id/etChooseTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="11:00 PM"
+            android:drawablePadding="5dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_action_picture_gallery"
+            android:background="@drawable/button_backgroung_rectangle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Time"
+            android:textSize="@dimen/medium_text_size"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/sans"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/btnDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apr.08 2018"
+            android:drawablePadding="5dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"            android:drawableLeft="@drawable/ic_action_picture_gallery"
+            android:background="@drawable/button_backgroung_rectangle"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvSelectedDate"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textStyle="italic|bold" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearTwo"
+        android:layout_below="@+id/linearOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/txtInfomation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your information"
+            android:textSize="@dimen/medium_text_size"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sans"/>
+
+        <TextView
+            android:id="@+id/txtFirstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/medium_text_size"
+            android:fontFamily="@font/sans"/>
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="First Name"
+            android:padding="5dp"
+            android:background="@color/colorWhite" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/txtLastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/medium_text_size"
+            android:fontFamily="@font/sans"/>
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Last Name"
+            android:padding="5dp"
+            android:background="@color/colorWhite" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/medium_text_size"
+            android:fontFamily="@font/sans"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Email"
+            android:padding="5dp"
+            android:background="@color/colorWhite" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/txtMobileNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile No"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/medium_text_size"
+            android:fontFamily="@font/sans"/>
+
+        <EditText
+            android:id="@+id/mobileNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Mobile No"
+            android:padding="5dp"
+            android:background="@color/colorWhite" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/medium_text_size"
+            android:fontFamily="@font/sans"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Address"
+            android:padding="5dp"
+            android:background="@color/colorWhite" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/txtZipCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zip Code"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/medium_text_size"
+            android:fontFamily="@font/sans"/>
+
+        <EditText
+            android:id="@+id/zipCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Zip Code"
+            android:padding="5dp"
+            android:background="@color/colorWhite" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/txtComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comment"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/small_sixteen_text_size"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/sans"/>
+
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:maxLines="5"
+            android:maxLength="5000"
+            android:text="Contrary to popular belief, Lorem Ipsum is
+            not simply random text. It has roots in a piece of classical
+             Latin literature from 45 BC, making it over 2000 years old."
+            android:inputType="textPersonName|textMultiLine"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

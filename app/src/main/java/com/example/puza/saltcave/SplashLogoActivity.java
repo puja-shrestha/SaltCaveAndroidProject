@@ -14,7 +14,7 @@ import com.example.puza.saltcave.fragments.ServicesFragment;
 
 public class SplashLogoActivity extends AppCompatActivity {
 
-    private static int SPLASH_TIME_OUT = 3000;
+    private static int SPLASH_TIME_OUT = 1200;
 
     Animation rotateAnimation;
     ImageView imageView;

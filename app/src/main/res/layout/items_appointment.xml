@@ -20,25 +20,44 @@
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:id="@+id/image"
-            app:civ_border_width="2dp"
-            android:layout_weight="4"
+            app:civ_border_width="1dp"
+            android:layout_weight="1"
             app:civ_border_color="@color/colorOrange"
             android:src="@drawable/tagimage"
             android:foreground="?attr/selectableItemBackground"
             android:clickable="true"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:paddingLeft="10dp"
+            android:layout_weight="4"
+            android:paddingLeft="15dp"
             android:textSize="@dimen/small_sixteen_text_size"
+            android:id="@+id/name"
             android:text="Full body massage with hot stones"/>
 
-        <ImageView
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_action_settings"/>
+            android:paddingRight="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/medium_text_size"
+            android:id="@+id/appointmentPrice"
+            android:text="$44.5"/>
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_above="@+id/button"
+            android:layout_centerHorizontal="true" />
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:src="@drawable/ic_action_settings"/>-->
 
        </LinearLayout>
 </android.support.v7.widget.CardView>

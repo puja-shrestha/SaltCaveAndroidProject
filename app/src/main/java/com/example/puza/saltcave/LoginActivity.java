@@ -19,7 +19,6 @@ public class LoginActivity extends AppCompatActivity {
 
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
-
         btnLogin = (Button) findViewById(R.id.buttonLogin);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override

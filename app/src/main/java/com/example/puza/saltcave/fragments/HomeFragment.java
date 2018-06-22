@@ -20,6 +20,7 @@ import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.example.puza.saltcave.R;
 import com.example.puza.saltcave.adapter.FeatureRecycler;
 import com.example.puza.saltcave.adapter.ServiceRecycler;
+import com.example.puza.saltcave.fragments.appointment.AppointmentFragment;
 import com.example.puza.saltcave.model.FeatureItems;
 import com.example.puza.saltcave.model.ServiceItems;
 

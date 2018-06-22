@@ -15,6 +15,8 @@ import com.example.puza.saltcave.model.AppointmentItem;
 
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.MyViewHolder> {
 
     private List<AppointmentItem> itemList;
@@ -29,14 +31,14 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         private TextView name;
-        private ImageView image;
+        private CircleImageView image;
 
 
         public MyViewHolder(View view) {
             super(view);
 
             name = (TextView) view.findViewById(R.id.name);
-            image = (ImageView) view.findViewById(R.id.image);
+            image = (CircleImageView) view.findViewById(R.id.image);
 
             //delete icon click
 //            deleteIcon = (ImageView)view.findViewById(R.id.deleteIcon);
