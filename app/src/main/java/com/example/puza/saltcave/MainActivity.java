@@ -43,19 +43,13 @@ MainActivity extends AppCompatActivity implements NavigationView.OnNavigationIte
     Toolbar toolbar;
     TextView toolbarTitle;
 
-    Dialog myDialog;
-    Button alert, close;
     ImageView searchIcon;
     EditText search;
 
     private DrawerLayout mDrawerLayout;
-    //ActionBarDrawerToggle actionBarDrawerToggle;
 
     ImageView imageView;
-    ImageView deleteIcon;
     ImageView notificationIcon;
-    Context context;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,15 +60,6 @@ MainActivity extends AppCompatActivity implements NavigationView.OnNavigationIte
 
         toolbarTitle = (TextView) findViewById(R.id.toolbarName);
 
-//        searchIcon = (ImageView) findViewById(R.id.searchIcon);
-//        search = (EditText) findViewById(R.id.search);
-//        searchIcon.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                search.setVisibility(View.VISIBLE);
-//            }
-//        });
-
         setSupportActionBar(toolbar);
         setUpBottomNavigation();
 
@@ -84,7 +69,6 @@ MainActivity extends AppCompatActivity implements NavigationView.OnNavigationIte
 
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
-
 
 
         imageView = (ImageView)findViewById(R.id.navigationMenu);
@@ -100,20 +84,13 @@ MainActivity extends AppCompatActivity implements NavigationView.OnNavigationIte
         notificationIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(MainActivity.this, NotificationActivity.class);
                 startActivity(intent);
-                //Toast.makeText(getApplicationContext(), "Notification icon", Toast.LENGTH_SHORT).show();
 
             }
         });
     }
-
-//    @Override
-//    public void onPostCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-//        super.onPostCreate(savedInstanceState, persistentState);
-//
-//        actionBarDrawerToggle.syncState();
-//    }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {

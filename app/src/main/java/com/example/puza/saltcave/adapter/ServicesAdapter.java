@@ -29,7 +29,6 @@ public class ServicesAdapter extends RecyclerView.Adapter<ServicesAdapter.MyView
             super(itemView);
             title =(TextView) itemView.findViewById(R.id.title);
             thumbnail = (ImageView) itemView.findViewById(R.id.thumbnail);
-//            overflow = (ImageView) itemView.findViewById(R.id.overflow);
         }
     }
 
@@ -49,45 +48,11 @@ public class ServicesAdapter extends RecyclerView.Adapter<ServicesAdapter.MyView
     public void onBindViewHolder(final ServicesAdapter.MyViewHolder holder, int position) {
         ServicesItem album = albumList.get(position);
         holder.title.setText(album.getName());
-//        holder.price.setText(album.getPrice() + "$6.99");
 
         //locating album cover using glide library
         Glide.with(mContext).load(album.getThumbnail()).into(holder.thumbnail);
 
-//        holder.overflow.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-////                showPopupMenu(holder.overflow);
-//            }
-//        });
     }
-
-//    private void showPopupMenu(View view){
-//        //inflate menu
-//
-//        PopupMenu popup = new PopupMenu(mContext, view);
-//        MenuInflater inflater = popup.getMenuInflater();
-//        inflater.inflate(R.menu.menu_album, popup.getMenu());
-//        popup.setOnMenuItemClickListener(new MyMenuItemClickListener());
-//        popup.show();
-//    }
-
-    //click listener for popup menu item
-//    private class MyMenuItemClickListener implements PopupMenu.OnMenuItemClickListener {
-//
-//        public MyMenuItemClickListener() {
-//        }
-//
-//        @Override
-//        public boolean onMenuItemClick(MenuItem item) {
-//            switch(menuItem.getItemId()) {
-//                case R.id.action_add_favourite:
-//                    Toast.makeText(mContext, "Add to favourite", Toast.LENGTH_SHORT).show();
-//
-//            }
-//            return false;
-//        }
-//    }
 
     @Override
     public int getItemCount() {

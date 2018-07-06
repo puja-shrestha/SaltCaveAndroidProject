@@ -71,11 +71,8 @@ public class ProductsFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                //Toast.makeText(context, "icon clicked", Toast.LENGTH_SHORT).show();
                 Alertdialog();
 
-//                Intent intent = new Intent(getContext(), PaymentActivity.class);
-//                startActivity(intent);
             }
         });
 
@@ -129,35 +126,6 @@ public class ProductsFragment extends Fragment {
         myDialog = builder.create();//AlertDialog dialog; create like this outside onClick
         myDialog.show();
     }
-//
-//    //Toogle
-//    public void changeVibrateState(){
-//
-//        boolean checked = toggleButton.isChecked();
-//        if(checked)
-//        {
-//            mLayoutManager = new LinearLayoutManager(
-//                    getContext(),
-//                    LinearLayoutManager.VERTICAL,
-//                    false
-//            );
-//            decorativeItemRecycler = new DecorativeItemRecycler(getActivity(), featuredSortItems);
-//            featureSortItemRecyclerView.setAdapter(decorativeItemRecycler);
-//            featureSortItemRecyclerView.setLayoutManager(mLayoutManager);
-//
-//        }
-//        else
-//        {
-//            mLayoutManager = new LinearLayoutManager(
-//                    getContext(),
-//                    LinearLayoutManager.VERTICAL,
-//                    false
-//            );
-//            featureSortItemRecyclerView.setLayoutManager(mLayoutManager);
-//            featureItemAdapter = new FeatureSortItemRecycler(getActivity(), featuredSortItems);
-//            featureSortItemRecyclerView.setAdapter(featureItemAdapter);        }
-//    }
-
 
     private void prepareAlbums(){
         int[] covers = new int[]{

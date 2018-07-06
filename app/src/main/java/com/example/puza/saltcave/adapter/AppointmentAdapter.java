@@ -21,8 +21,6 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
 
     private List<AppointmentItem> itemList;
     Activity context;
-//    ImageView deleteIcon;
-//    AlertDialog myDialog;
 
     public AppointmentAdapter(Activity context, List<AppointmentItem> itemList) {
         this.itemList = itemList;
@@ -40,36 +38,8 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
             name = (TextView) view.findViewById(R.id.name);
             image = (CircleImageView) view.findViewById(R.id.image);
 
-            //delete icon click
-//            deleteIcon = (ImageView)view.findViewById(R.id.deleteIcon);
-//            deleteIcon.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//
-//                    //Toast.makeText(context, "icon clicked", Toast.LENGTH_SHORT).show();
-//                    Alertdialog();
-//                }
-//            });
-
         }
     }
-
-
-//    public void Alertdialog(){
-//
-//        myDialog = new AlertDialog.Builder(context).create();
-//        myDialog.setTitle("Alert");
-//        myDialog.setMessage("Are you sure?");
-//        myDialog.setButton("Yes", new DialogInterface.OnClickListener() {
-//            @Override
-//            public void onClick(DialogInterface dialog, int which) {
-//
-//            }
-//        });
-//
-//        myDialog.show();
-//    }
-
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {

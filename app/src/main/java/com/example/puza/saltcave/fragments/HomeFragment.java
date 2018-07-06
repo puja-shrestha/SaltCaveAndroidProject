@@ -33,11 +33,6 @@ import java.util.List;
  */
 public class HomeFragment extends Fragment {
 
-    //slider
-//    private SliderPagerAdapter mAdapter;
-//    private SliderIndicator mIndicator;
-
-    //    private SliderView sliderView;
     private LinearLayout mLinearLayout;
 
     Button abook_button;
@@ -84,11 +79,6 @@ public class HomeFragment extends Fragment {
         });
 
         mDemoSlider = (SliderLayout)view.findViewById(R.id.sliderView);
-
-//        //slider
-//        sliderView = (SliderView) view.findViewById(R.id.sliderView);
-//        mLinearLayout = (LinearLayout) view.findViewById(R.id.pagesContainer);
-//        setupSlider();
 
         HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
         file_maps.put("Herbal Soup",R.drawable.banner1);
@@ -156,25 +146,6 @@ public class HomeFragment extends Fragment {
 
         return view;
     }
-
-
-
-    //slider
-//    private void setupSlider() {
-//        sliderView.setDurationScroll(800);
-//        List<Fragment> fragments = new ArrayList<>();
-//        fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-1.jpg"));
-//        fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-2.jpg"));
-//        fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-3.jpg"));
-//        fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-4.jpg"));
-//
-//        mAdapter = new SliderPagerAdapter(getFragmentManager(), fragments);
-//        sliderView.setAdapter(mAdapter);
-//        mIndicator = new SliderIndicator(getActivity(), mLinearLayout, sliderView, R.drawable.indicator_circle);
-//        mIndicator.setPageCount(fragments.size());
-//        mIndicator.show();
-//    }
-
 
     private List<FeatureItems> getFeaturedItems() {
         featuredItems = new ArrayList<FeatureItems>();

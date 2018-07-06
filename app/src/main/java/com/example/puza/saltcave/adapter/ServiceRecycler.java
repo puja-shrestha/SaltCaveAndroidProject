@@ -22,8 +22,6 @@ public class ServiceRecycler extends RecyclerView.Adapter<ServiceRecycler.MyView
 
     private List<ServiceItems> itemList;
     Activity context;
-//    ProgressDialog progressDialog;
-
 
     public ServiceRecycler(Activity context, List<ServiceItems> itemList) {
         this.itemList = itemList;
@@ -33,7 +31,6 @@ public class ServiceRecycler extends RecyclerView.Adapter<ServiceRecycler.MyView
     public class MyViewHolder extends RecyclerView.ViewHolder {
         private TextView name, price;
         private ImageView image;
-//        private CardView cardView;
 
 
         public MyViewHolder(View view) {
@@ -42,45 +39,6 @@ public class ServiceRecycler extends RecyclerView.Adapter<ServiceRecycler.MyView
             name = (TextView) view.findViewById(R.id.name);
             price = (TextView) view.findViewById(R.id.price);
             image = (ImageView) view.findViewById(R.id.image);
-
-//            cardView = (CardView) view.findViewById(R.id.dateRecycler);
-
-
-
-//            cardView.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//
-//                    progressDialog = new ProgressDialog(context);
-//                    progressDialog.setMessage("Loading..."); // Setting Message
-//                    progressDialog.setTitle("Please wait"); // Setting Title
-//                    progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER); // Progress Dialog Style Spinner
-//                    progressDialog.show(); // Display Progress Dialog
-//                    progressDialog.setCancelable(false);
-//                    new Thread(new Runnable() {
-//                        public void run() {
-//                            try {
-//                                Thread.sleep(2000);
-//                            } catch (Exception e) {
-//                                e.printStackTrace();
-//                            }
-//                            progressDialog.dismiss();
-////                            MoreItemsfragment fragment = new MoreItemsfragment();
-////                            FragmentTransaction transaction = ((FragmentActivity) context).getSupportFragmentManager().beginTransaction();
-////                            transaction.replace(R.id.frame_container, fragment);
-////                            transaction.commit();
-//                        }
-//                    }).start();
-////                    Intent intent = new Intent(context, BlankActivity.class);
-////                    context.startActivity(intent);
-//
-////                    Intent intent = new Intent(context, MoreItemsfragment.class);
-////                    context.startActivity(intent);
-//
-//
-////                    Toast.makeTextprogressDialog = new ProgressDialog(MainActivity.this);}
-//                }
-//            });
 
         }
     }
@@ -100,12 +58,6 @@ public class ServiceRecycler extends RecyclerView.Adapter<ServiceRecycler.MyView
         holder.price.setText(items.getPrice());
         holder.image.setImageResource(items.getImage());
 
-//        holder.cardView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                transport("card");
-//            }
-//        });
     }
 
     @Override
@@ -114,38 +66,4 @@ public class ServiceRecycler extends RecyclerView.Adapter<ServiceRecycler.MyView
         return this.itemList.size();
     }
 
-//    private void transport(String fragmentName){
-//        Fragment fragment = null;
-//        FragmentManager fragmentManager = ((FragmentActivity)context).getSupportFragmentManager();
-//
-//        switch (fragmentName) {
-//            case "card":
-//
-//
-//                progressDialog = new ProgressDialog(context);
-//                progressDialog.setMessage("Loading..."); // Setting Message
-//                progressDialog.setTitle("Please wait"); // Setting Title
-//                progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER); // Progress Dialog Style Spinner
-//                progressDialog.show(); // Display Progress Dialog
-//                progressDialog.setCancelable(false);
-//
-//                new Thread(new Runnable() {
-//                    public void run() {
-//                        try {
-//                            Thread.sleep(2000);
-//                        } catch (Exception e) {
-//                            e.printStackTrace();
-//                        }
-//                        progressDialog.dismiss();
-//                    }
-//                }).start();
-//
-//                fragment = new ShopItemsFragment();
-//                break;
-//        }
-//
-//        if (fragment != null){
-//            fragmentManager.beginTransaction().replace(R.id.frame_container,fragment).addToBackStack(null).commit();
-//        }
-//    }
 }

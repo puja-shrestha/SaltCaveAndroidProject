@@ -28,13 +28,9 @@ public class MoreFragment extends Fragment {
     Animation rotateAnimation;
     ImageView imageView;
 
-//    DayScrollDatePicker mPicker;
-
-
     public MoreFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -57,23 +53,6 @@ public class MoreFragment extends Fragment {
 
             }
         },SPLASH_TIME_OUT);
-
-
-
-
-//        mPicker = (DayScrollDatePicker) findViewById(R.id.day_date_picker);
-//
-//        mPicker.setStartDate(10, 10, 2010);
-//        mPicker.setEndDate(11, 11, 2011);
-//
-//        mPicker.getSelectedDate(new OnDateSelectedListener() {
-//            @Override
-//            public void onDateSelected(@Nullable Date date) {
-//                if(date != null){
-//                    // do something with selected date
-//                }
-//            }
-//        });
 
         return view;
     }
